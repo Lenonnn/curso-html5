@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meu programa</title>
+    <style>
+        body {
+            /* Comentário em CSS */
+            background-color: rgb(134, 134, 233);
+            color: black;
+            font: normal 25pt arial;
+        }
+
+        h1 {
+            color: rgba(124, 7, 7, 0.842);
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Comentário e HTML -->
+    <h1>Olá, Mundo!</h1>
+    <p>Já se fue la maldición</p>
+
+    <script>
+
+        // var n2 = Number.parseInt(window.prompt('Digite outro número: ')) // Faz a conversão do texto para números inteiros
+        // var n2 = Number.parsefloat(window.prompt('Digite outro número:'))// Faz a conversão do doi textos para reais
+
+        var n1 = Number(window.prompt('Digite um número: '));  // Cria um prompt que receber texto  
+        var n2 = Number(window.prompt('Digite outro número: ')); // Faz a conversão dos dois textos para números
+        var s = n1 + n2; //soma os números 
+        // window.alert('A soma entre' + n1 + ' e ' + n2 + ' é igual a ' + s); // Usa concatenação, ainda compatível com navegadores
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`); // Usando template Strings , tecnologia atualizada para as novas versões JS
+        var s = 'JavaScript';
+        /*
+        s.length;//Devolve o comprimento
+        s.toUpperCase(); // tudo Maiúscula
+        s.toLowerCase(); //Tudo Minúscula
+        */
+
+    </script>
+
+</body>
+
+</html>

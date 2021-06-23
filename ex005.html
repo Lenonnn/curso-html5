@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manipulando DOM</title>
+    <style>
+     body {
+         background: rgb(123, 117, 150);
+         color: rgb(82, 41, 22) ;
+         font: normal 18px arial;
+     }
+     button{
+        
+        background: rgb(177, 176, 194);
+        color:rgb(155, 22, 40);
+        font: strong 20pt arial;
+
+     }
+     }
+    </style>
+</head>
+<body>
+    <h1>Começando estudo com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar a <strong>DOM</strong> em JavaScript</p>
+<div id="msg">Clique em mim </div>
+
+<script>
+
+/*
+var p1 = document.getElementsByTagName('p')[1]; // seleciona elementos pela tag name e posição
+p1.style.color = '#ca2389'; // forma de declarar a cor para conteudos da variavel
+window.document.write('Está escrito assim '+ p1.innerHTML);//Usando a tag innerHTML o texto já vem formatado
+*/
+
+/*
+var corpo = document.body;
+var p1 = document.getElementsByTagName('p')[1];
+var d = window.document.getElementById('msg');
+d.style.background = 'green';  // altera inline a cor de fundo do texto
+d.innerText = 'Estou aguardando... '  // modifica inline o texto original da varaialvel com id='msg'
+*/
+
+var d = document.querySelector('div#msg');//Busca por id usando # e por classe usando '( . Ponto) '
+d.style.background = 'green'
+d.style.color = 'white'
+
+</script>
+</body>
+</html>
